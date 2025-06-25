@@ -1,5 +1,5 @@
 ---
-import '../styles/global.css';
+import '@styles/global.css';
 
 import siteContent from '@siteContent';
 
@@ -9,17 +9,17 @@ interface Props {
 
 const { title } = Astro.props;
 
-const { image, summary, url } = siteContent.basics;
+// const { image, summary, url } = siteContent.basics;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en" class="snap-y snap-mandatory scroll-smooth">
   <head>
     <meta charset="UTF-8" />
 
     <title>{title}</title>
 
-    <meta name="description" content={summary} />
+    <!-- <meta name="description" content={summary} />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="preload" as="image" href={image} />
@@ -39,11 +39,9 @@ const { image, summary, url } = siteContent.basics;
       siteContent?.analyticsCode && (
         <script is:inline src={siteContent.analyticsCode} />
       )
-    }
+    } -->
   </head>
   <body>
-    <div id="root">
-      <slot />
-    </div>
+    <slot />
   </body>
 </html>
