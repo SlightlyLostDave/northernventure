@@ -1,1 +1,13 @@
 @import 'tailwindcss';
+
+@theme {
+  --font-display: 'Montserrat Variable', sans-serif;
+  --font-sans: 'Noto Sans Variable', sans-serif;
+}
+
+@layer base {
+  .font-display {
+    font-family: var(--font-display);
+    text-transform: uppercase;
+  }
+}

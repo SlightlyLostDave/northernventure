@@ -10,6 +10,8 @@
     "commit": "cz"
   },
   "dependencies": {
+    "@fontsource-variable/montserrat": "^5.2.6",
+    "@fontsource-variable/noto-sans": "^5.2.7",
     "@tailwindcss/vite": "^4.1.10",
     "astro": "^5.10.1",
     "tailwindcss": "^4.1.10"
